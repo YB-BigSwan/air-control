@@ -8,8 +8,8 @@
 
 const uint16_t kIrLedPin = 21; 
 
-const char* ssid = "( ͡° ͜ʖ ͡°)";
-const char* password = "OnePingToRuleThemAll";
+const char* ssid = "Your_SSID";
+const char* password = "Your_Password";
 
 AsyncWebServer server(80);
 
@@ -36,7 +36,7 @@ void registerWithServer() {
   http.setTimeout(30000); 
   client.setTimeout(30000); 
   // Set your Heroku server's URL
-  String serverUrl = "http://air-control-25b7322984ae.herokuapp.com/register";
+  String serverUrl = "server url goes here";
   http.begin(client, serverUrl);
 
   // Create JSON data with the ESP32's IP address
